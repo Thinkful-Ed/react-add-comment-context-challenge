@@ -3,6 +3,7 @@ import CommentList from './CommentList'
 import CommentForm from './CommentForm'
 import CommentsContext from './CommentsContext'
 import './App.css';
+import {hot} from "react-hot-loader";
 
 class App extends Component {
   state = {
@@ -40,4 +41,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default hot(module)(App);
